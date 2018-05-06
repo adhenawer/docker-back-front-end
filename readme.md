@@ -1,7 +1,5 @@
 # Docker-back-front-end
 
-Modelo de aplicação conteinerizada separada em backend e frontend
-
 ```sh
 $ docker-compose build
 ```
