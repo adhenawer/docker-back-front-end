@@ -1,0 +1,41 @@
+version: '2'
+
+services:
+
+### Frontend container    
+
+    frontend:
+        build:
+            context: ./frontend/node
+        container_name: frontend
+        volumes:
+            - ./:/var/www
+        depends_on:
+            - backend
+        ports:
+            - "7000:7000"
+        tty: true
+
+### Backend container
+
+    backend:
+        build:
+            context: ./backend/php-fpm
+        container_name: backend
+        volumes:
+            - ./:/var/www
+        depends_on:
+            - nginx
+
+### Nginx container
+
+    nginx:
+        build:
+            context: ./backend/nginx
+        container_name: nginx
+        ports:
+            - "8080:80"
+
+### Mysql container
+### Redis container
+### PHPMyAdmin container
