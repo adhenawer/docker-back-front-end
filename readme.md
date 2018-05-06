@@ -24,7 +24,7 @@ $ cd frontend && npm install && npm run start:dev
 <img  src="https://image.ibb.co/kA8Btn/Screen_Shot_2018_05_06_at_19_25_55.png">
 
 
-## Conteúdo
+### Conteúdo
 
 - Backend
 	- PHP 7.1.9
@@ -32,5 +32,11 @@ $ cd frontend && npm install && npm run start:dev
 - Frontend 
 	- Node 8.11.1
 	- Weppack 4.7.0
+	
+## TODO
 
-**OBS:** *Este modelo ainda não está funcional*
+- Webpack build / run server
+- Network comunicação containers backend x frondend
+- Server_name nginx
+
+**OBS:** *Este modelo ainda não funcional*
